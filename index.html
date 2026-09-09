@@ -3,64 +3,447 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Very Andrianto | Portfolio</title>
+  <title>Very Andrianto | Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <h2>Very.</h2>
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <nav class="topbar">
+    <h2 class="brand">Very.</h2>
     <ul>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Kontak</a></li>
+      <li><a href="#about"><span data-lang="id">Tentang</span><span data-lang="en" hidden>About</span></a></li>
+      <li><a href="#skills"><span data-lang="id">Keahlian</span><span data-lang="en" hidden>Skills</span></a></li>
+      <li><a href="#experience"><span data-lang="id">Pengalaman</span><span data-lang="en" hidden>Experience</span></a></li>
+      <li><a href="#project"><span data-lang="id">Proyek</span><span data-lang="en" hidden>Projects</span></a></li>
+      <li><a href="#certifications"><span data-lang="id">Sertifikasi</span><span data-lang="en" hidden>Certifications</span></a></li>
+      <li><a href="#contact"><span data-lang="id">Kontak</span><span data-lang="en" hidden>Contact</span></a></li>
     </ul>
+    <button id="langToggle" class="lang-toggle" type="button" aria-label="Ubah bahasa">EN</button>
   </nav>
 
-  <header>
-    <span>Very Andrianto</span></h1>
-    <p>Mahasiswa Teknik Otomasi | Mikrokontroler & IoT Enthusiast</p>
-    <a href="#project" class="btn">Lihat Project</a>
+  <header class="hero" id="home">
+    <p class="eyebrow">PORTOFOLIO 2026</p>
+    <div class="hero-layout">
+      <figure class="profile-photo-wrap">
+        <img src="assets/profile-avatar.svg" alt="Foto profil Very Andrianto" class="profile-photo">
+      </figure>
+      <div>
+        <h1>Very Andrianto<br><span>Automation, IoT, dan Computer Vision</span></h1>
+        <p class="subtitle" data-lang="id">
+          Mahasiswa semester 7 D4 Teknologi Rekayasa Otomasi Universitas Diponegoro dengan minat
+          pada instrumentasi, sistem kontrol, Internet of Things (IoT), dan robotika.
+        </p>
+        <p class="subtitle" data-lang="en" hidden>
+          7th semester student in the Applied Bachelor of Automation Engineering Technology at
+          Diponegoro University, interested in instrumentation, control systems, Internet of Things (IoT), and robotics.
+        </p>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#project" class="btn btn-primary" data-lang="id">Lihat Proyek</a>
+      <a href="#project" class="btn btn-primary" data-lang="en" hidden>View Projects</a>
+      <a href="#contact" class="btn btn-outline" data-lang="id">Kolaborasi</a>
+      <a href="#contact" class="btn btn-outline" data-lang="en" hidden>Collaborate</a>
+      <a href="../CV very andrianto.pdf" class="btn btn-outline" target="_blank" rel="noreferrer" data-lang="id">Lihat CV</a>
+      <a href="../CV very andrianto.pdf" class="btn btn-outline" target="_blank" rel="noreferrer" data-lang="en" hidden>View CV</a>
+    </div>
+    <div class="fact-row">
+      <article>
+        <h3>3.77</h3>
+        <p data-lang="id">IPK saat ini</p>
+        <p data-lang="en" hidden>Current GPA</p>
+      </article>
+      <article>
+        <h3>2</h3>
+        <p data-lang="id">Pengalaman magang industri</p>
+        <p data-lang="en" hidden>Industry internship experiences</p>
+      </article>
+      <article>
+        <h3>4+</h3>
+        <p data-lang="id">Sertifikasi dan pelatihan</p>
+        <p data-lang="en" hidden>Certifications and trainings</p>
+      </article>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya fokus pada pengembangan sistem berbasis mikrokontroler,
-      sensor, dan data monitoring. Berpengalaman dalam Arduino,
-      data logger, dan sistem IoT sederhana.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="section about-section">
+      <div class="section-title">
+        <p>PROFILE</p>
+        <h2 data-lang="id">Tentang Saya</h2>
+        <h2 data-lang="en" hidden>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <article class="panel reveal-delay-1">
+          <h3 data-lang="id">Ringkasan Profesional</h3>
+          <h3 data-lang="en" hidden>Professional Summary</h3>
+          <p data-lang="id">
+            Memiliki kemampuan dalam kepemimpinan, komunikasi yang baik, adaptif terhadap lingkungan baru,
+            serta manajemen waktu yang terorganisir. Memiliki pengalaman magang di PLTU UBJOM Rembang
+            dan PLN ULP Balong dengan pemahaman dasar sistem kelistrikan, pemeliharaan peralatan,
+            serta operasional di lingkungan industri.
+          </p>
+          <p data-lang="en" hidden>
+            Strong in leadership, communication, adaptability in new environments, and organized time management.
+            Internship experience at PLTU UBJOM Rembang and PLN ULP Balong with foundational knowledge of
+            electrical systems, equipment maintenance, and industrial operations.
+          </p>
+        </article>
+        <article class="panel reveal-delay-2">
+          <h3 data-lang="id">Capaian Akademik & Teknis</h3>
+          <h3 data-lang="en" hidden>Academic and Technical Highlights</h3>
+          <p data-lang="id">
+            Aktif sebagai asisten praktikum yang mendukung proses pembelajaran laboratorium.
+            Menyelesaikan proyek modul OPM, Panel Instalasi Listrik (PIPL), Mikrokontroler dan Embedded System,
+            Fire Alarm Control Panel (FACP), serta Fire Suppression System PLN 300 kVA (V1, V2, V3).
+          </p>
+          <p data-lang="en" hidden>
+            Active as a lab teaching assistant supporting practical learning sessions.
+            Completed projects including OPM modules, Electrical Panel Installation (PIPL),
+            Microcontroller and Embedded System modules, Fire Alarm Control Panel (FACP), and
+            PLN 300 kVA Fire Suppression System (V1, V2, V3).
+          </p>
+        </article>
+      </div>
+    </section>
 
-  <section id="project">
-    <h2>Project Saya</h2>
+    <section class="section education-section">
+      <div class="section-title">
+        <p>EDUCATION</p>
+        <h2 data-lang="id">Riwayat Pendidikan</h2>
+        <h2 data-lang="en" hidden>Education</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Universitas Diponegoro - Semarang, Indonesia</h3>
+            <p class="timeline-meta">Juni 2023 - Sekarang</p>
+            <p data-lang="id">D4 Teknologi Rekayasa Otomasi | IPK: 3,77 / 4,00</p>
+            <p data-lang="en" hidden>Applied Bachelor in Automation Engineering Technology | GPA: 3.77 / 4.00</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>SMK N 1 Jenangan - Ponorogo, Indonesia</h3>
+            <p class="timeline-meta">Mei 2019 - Mei 2023</p>
+            <p data-lang="id">Teknik Otomasi Industri</p>
+            <p data-lang="en" hidden>Industrial Automation Engineering</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Monitoring Sensor Cahaya</h3>
-      <p>Sensor lux + RTC + SD Card data logger</p>
-    </div>
+    <section id="experience" class="section">
+      <div class="section-title">
+        <p>EXPERIENCE</p>
+        <h2 data-lang="id">Timeline Pengalaman Kerja</h2>
+        <h2 data-lang="en" hidden>Work Experience Timeline</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Universitas Diponegoro - Asisten Praktikum Sistem Cerdas</h3>
+            <p class="timeline-meta">Agustus 2025 - Desember 2025</p>
+            <ul data-lang="id">
+              <li>Memberikan pengarahan praktikum kepada praktikan.</li>
+              <li>Membantu praktikan menyelesaikan error saat praktikum.</li>
+              <li>Melakukan pengawasan ketika sesi kuis dan evaluasi praktikum.</li>
+            </ul>
+            <ul data-lang="en" hidden>
+              <li>Guided students during smart systems practicum sessions.</li>
+              <li>Helped students solve technical errors during practicum.</li>
+              <li>Supervised quiz sessions and conducted practicum evaluations.</li>
+            </ul>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>Data Logger Arduino</h3>
-      <p>Penyimpanan data real-time ke SD card</p>
-    </div>
+        <article class="timeline-item reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Universitas Diponegoro - Asisten Praktikum Mikrokontroller</h3>
+            <p class="timeline-meta">Agustus 2025 - Desember 2025</p>
+            <ul data-lang="id">
+              <li>Melakukan pengecekan laporan praktikan.</li>
+              <li>Memberikan pengarahan praktikum kepada praktikan.</li>
+              <li>Melakukan evaluasi praktikum.</li>
+            </ul>
+            <ul data-lang="en" hidden>
+              <li>Reviewed student practicum reports.</li>
+              <li>Provided guidance in microcontroller practicum classes.</li>
+              <li>Performed practicum evaluations.</li>
+            </ul>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>Dashboard Sensor</h3>
-      <p>Visualisasi data sensor dalam grafik</p>
-    </div>
+        <article class="timeline-item reveal-delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>PT PLN (Persero) UP3 Ponorogo ULP Balong - Asisten Engineer</h3>
+            <p class="timeline-meta">Agustus 2022 - Januari 2023</p>
+            <ul data-lang="id">
+              <li>Membantu inspeksi dan pemeliharaan preventif jaringan distribusi tenaga listrik.</li>
+              <li>Melakukan pemantauan dan pengukuran beban gardu distribusi serta kualitas tegangan.</li>
+              <li>Menyusun laporan rekapitulasi gangguan dan dokumentasi aset distribusi berkala.</li>
+            </ul>
+            <ul data-lang="en" hidden>
+              <li>Assisted inspections and preventive maintenance in power distribution networks.</li>
+              <li>Monitored transformer load and mapped voltage quality in the ULP Balong area.</li>
+              <li>Prepared disturbance recap reports and periodic distribution-asset documentation.</li>
+            </ul>
+          </div>
+        </article>
 
-  </section>
+        <article class="timeline-item reveal-delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>PJB UB JOM PLTU Rembang - Asisten Engineer</h3>
+            <p class="timeline-meta">Februari 2022 - Juli 2022</p>
+            <ul data-lang="id">
+              <li>Membantu tugas engineer, first line maintenance, dan protokol check.</li>
+              <li>Membantu penanganan gangguan sistem kendali dan instrumen lapangan.</li>
+              <li>Melakukan pengujian fungsi interlock keselamatan dan sistem proteksi fire alarm.</li>
+              <li>Membuat laporan kegiatan internship.</li>
+            </ul>
+            <ul data-lang="en" hidden>
+              <li>Supported engineers in first-line maintenance and protocol checks.</li>
+              <li>Assisted troubleshooting of control systems and field instrumentation.</li>
+              <li>Tested safety interlock functions and fire-alarm protection systems in vital areas.</li>
+              <li>Prepared internship activity reports.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Kontak</h2>
-    <p>Email: emailkamu@gmail.com</p>
-    <p>GitHub: github.com/username</p>
-  </section>
+    <section class="section">
+      <div class="section-title">
+        <p>ORGANIZATION</p>
+        <h2 data-lang="id">Organisasi dan Volunteer</h2>
+        <h2 data-lang="en" hidden>Organization and Volunteer</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Laboratorium TEFA ET UNDIP - Tim Elektrikal Laboratorium</h3>
+            <p class="timeline-meta">November 2023 - Sekarang</p>
+            <ul data-lang="id">
+              <li>Produksi Printed Circuit Board (PCB).</li>
+              <li>Mengerjakan modul Praktikum Mikrokontroller dan Embedded System.</li>
+              <li>Mengerjakan modul Praktikum Instalasi Panel Listrik.</li>
+              <li>Replika Fire Alarm Control Panel dan Fire Supression PLN 300 KVA (V1, V2, V3).</li>
+              <li>Mengerjakan Sistem Pemutakhiran BIM - FISH 2026.</li>
+            </ul>
+            <ul data-lang="en" hidden>
+              <li>Produced Printed Circuit Boards (PCB).</li>
+              <li>Worked on Microcontroller and Embedded System practicum modules.</li>
+              <li>Worked on Electrical Panel Installation practicum modules.</li>
+              <li>Built Fire Alarm Control Panel replicas and PLN 300 KVA fire suppression projects (V1, V2, V3).</li>
+              <li>Worked on BIM Update System - FISH 2026.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>HIMATRO - Kepala Bidang Advokesma</h3>
+            <p class="timeline-meta">April 2025 - Januari 2025</p>
+            <ul data-lang="id">
+              <li>Membuat grand design organisasi dan implementasi ide inovasi bidang.</li>
+              <li>Mengordinasikan fungsionaris untuk ketercapaian program kerja.</li>
+              <li>Berkolaborasi dengan Unit Pengendalian Internal untuk iklim kerja kondusif.</li>
+              <li>Mendukung penyelesaian isu akademik, UKT, dan beasiswa.</li>
+              <li>Berkoordinasi dengan birokrasi terkait aspirasi mahasiswa.</li>
+            </ul>
+            <ul data-lang="en" hidden>
+              <li>Developed organizational grand design and implemented innovation initiatives.</li>
+              <li>Coordinated staff members to ensure effective program execution.</li>
+              <li>Collaborated with the Internal Control Unit to maintain a healthy work climate.</li>
+              <li>Supported strategic student issues related to academics, tuition, and scholarships.</li>
+              <li>Coordinated with administration regarding student aspirations.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-title">
+        <p>CORE SKILLS</p>
+        <h2 data-lang="id">Keahlian Utama</h2>
+        <h2 data-lang="en" hidden>Core Skills</h2>
+      </div>
+      <div class="skills-wrap reveal-delay-1">
+        <span>C Programming (Arduino IDE)</span>
+        <span>LabVIEW Programming</span>
+        <span>PLC (Cx-Programmer)</span>
+        <span>Autodesk Eagle</span>
+        <span>EasyEDA</span>
+        <span>CtrlX (SCADA)</span>
+        <span>FluidSIM Pneumatics</span>
+        <span>Leadership</span>
+        <span>Problem Solving</span>
+        <span>Komunikasi</span>
+        <span>Adaptif</span>
+        <span>Teamwork</span>
+        <span>Time Management</span>
+      </div>
+    </section>
+
+    <section id="project" class="section project-section">
+      <div class="section-title">
+        <p>SELECTED WORKS</p>
+        <h2 data-lang="id">Proyek Pilihan</h2>
+        <h2 data-lang="en" hidden>Selected Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="card reveal-delay-1">
+          <div class="card-head">
+            <h3>Modul OPM</h3>
+            <span>Academic Project</span>
+          </div>
+          <p data-lang="id">Pengembangan modul pembelajaran untuk mendukung praktikum otomasi secara terstruktur.</p>
+          <p data-lang="en" hidden>Developed instructional modules to support structured automation practicum sessions.</p>
+        </article>
+
+        <article class="card reveal-delay-2">
+          <div class="card-head">
+            <h3>Panel Instalasi Listrik (PIPL)</h3>
+            <span>Electrical</span>
+          </div>
+          <p data-lang="id">Perancangan dan implementasi panel instalasi listrik untuk kebutuhan praktik industri.</p>
+          <p data-lang="en" hidden>Designed and implemented electrical installation panels for industrial-oriented practice.</p>
+        </article>
+
+        <article class="card reveal-delay-3">
+          <div class="card-head">
+            <h3>Mikrokontroler dan Embedded System</h3>
+            <span>Embedded</span>
+          </div>
+          <p data-lang="id">Pengembangan proyek integrasi sensor, kontrol, dan pemrosesan data pada sistem embedded.</p>
+          <p data-lang="en" hidden>Built sensor, control, and data-processing integration projects in embedded systems.</p>
+        </article>
+
+        <article class="card reveal-delay-2">
+          <div class="card-head">
+            <h3>Fire Alarm Control Panel (FACP)</h3>
+            <span>Safety System</span>
+          </div>
+          <p data-lang="id">Pembuatan replika FACP sebagai simulasi sistem keamanan kebakaran.</p>
+          <p data-lang="en" hidden>Built an FACP replica as a fire safety system simulation.</p>
+        </article>
+
+        <article class="card reveal-delay-3">
+          <div class="card-head">
+            <h3>Fire Supression PLN 300 KVA (V1, V2, V3)</h3>
+            <span>Industrial Safety</span>
+          </div>
+          <p data-lang="id">Pengembangan bertahap sistem fire suppression untuk skenario utilitas kelistrikan.</p>
+          <p data-lang="en" hidden>Iterative development of fire suppression systems for electrical utility scenarios.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="section-title">
+        <p>CERTIFICATION</p>
+        <h2 data-lang="id">Badge Sertifikasi</h2>
+        <h2 data-lang="en" hidden>Certification Badges</h2>
+      </div>
+      <div class="badge-grid">
+        <article class="badge-item reveal-delay-1">
+          <h3>PLC Based Electrical Equipment Operation Cluster</h3>
+          <p>LAB TEFA ET Universitas Diponegoro</p>
+          <span>Oktober 2024</span>
+        </article>
+        <article class="badge-item reveal-delay-2">
+          <h3>PCB Manufacture</h3>
+          <p>LAB TEFA ET Universitas Diponegoro</p>
+          <span>Juli 2024</span>
+        </article>
+        <article class="badge-item reveal-delay-2">
+          <h3>Leadership Training (LT)</h3>
+          <p>Himpunan Mahasiswa Teknologi Rekayasa Otomasi</p>
+          <span>Februari 2024</span>
+        </article>
+        <article class="badge-item reveal-delay-3">
+          <h3>Latihan Manajemen Mahasiswa Pra-Dasar (LKMMPD)</h3>
+          <p>Himpunan Mahasiswa Teknologi Rekayasa Otomasi</p>
+          <span>November 2023</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-title">
+        <p>CONTACT</p>
+        <h2 data-lang="id">Kontak</h2>
+        <h2 data-lang="en" hidden>Contact</h2>
+      </div>
+      <div class="contact-card reveal-delay-3">
+        <p data-lang="id">Terbuka untuk kolaborasi riset terapan, proyek otomasi, dan pengembangan sistem berbasis IoT.</p>
+        <p data-lang="en" hidden>Open for applied-research collaboration, automation projects, and IoT system development.</p>
+        <ul>
+          <li>
+            <span data-lang="id">Alamat: Kauman RT 003 RW 001, Ponorogo, Jawa Timur</span>
+            <span data-lang="en" hidden>Address: Kauman RT 003 RW 001, Ponorogo, East Java</span>
+          </li>
+          <li>
+            <span data-lang="id">Email:</span>
+            <span data-lang="en" hidden>Email:</span>
+            <a href="mailto:VeryAndrianto07@gmail.com">VeryAndrianto07@gmail.com</a>
+          </li>
+          <li>
+            <span data-lang="id">Telepon:</span>
+            <span data-lang="en" hidden>Phone:</span>
+            <a href="tel:+6282244950313">082244950313</a>
+          </li>
+          <li>
+            <span data-lang="id">CV: </span>
+            <span data-lang="en" hidden>CV: </span>
+            <a href="../CV very andrianto.pdf" target="_blank" rel="noreferrer" data-lang="id">Buka Dokumen CV</a>
+            <a href="../CV very andrianto.pdf" target="_blank" rel="noreferrer" data-lang="en" hidden>Open CV Document</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2026 Very Andrianto</p>
+    <p>© 2026 Very Andrianto. Crafted with precision and curiosity.</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('langToggle');
+    let currentLang = 'id';
+
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach((element) => {
+        element.hidden = element.getAttribute('data-lang') !== lang;
+      });
+
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      toggle.textContent = lang === 'id' ? 'EN' : 'ID';
+    }
+
+    toggle.addEventListener('click', () => {
+      setLanguage(currentLang === 'id' ? 'en' : 'id');
+    });
+  </script>
 
 </body>
 </html>

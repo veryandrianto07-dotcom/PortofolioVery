@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Foto Profil Very Andrianto</title>
+  <desc id="desc">Avatar inisial Very Andrianto untuk halaman portofolio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d2d42"/>
+      <stop offset="100%" stop-color="#133f2f"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6b73c"/>
+      <stop offset="100%" stop-color="#ff8d6c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="300" r="218" fill="none" stroke="url(#ring)" stroke-width="20"/>
+  <circle cx="300" cy="240" r="72" fill="#8ff9eb" opacity="0.95"/>
+  <path d="M160 466c18-74 77-122 140-122s122 48 140 122" fill="#8ff9eb" opacity="0.95"/>
+  <text x="300" y="548" text-anchor="middle" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="56" fill="#f6f9fc" font-weight="700">VA</text>
+</svg>
